@@ -2,9 +2,12 @@
 import './App.css';
 import Route from './routes/Route'
 
-function App() {
+import getBancos from './controllers/bancos.js';
+
+const App = () => {
   return (
     <div className="App">
+      {getBancos()}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

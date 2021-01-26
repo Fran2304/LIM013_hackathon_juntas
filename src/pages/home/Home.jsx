@@ -1,16 +1,17 @@
-import React from "react";
-import "./home.scss";
-import Navbar from "../../components/navbar/Navbar";
-import ProductHome from "../../components/productsHome/ProductHome";
-// import banner from "../../images/banner_mobile.png";
-import car from "../../images/car.svg";
-import cash from "../../images/cash.svg";
-import pigbank from "../../images/pig_bank.svg";
-import safe from "../../images/safe.png";
-import house from "../../images/house_line.png";
-import heart from "../../images/heart_24px.png";
-import points from "../../images/more_vert_24px.png";
-import Footer from "../../components/footer/Footer";
+import React from 'react'
+//import  './home.scss'
+import Navbar from '../../components/navbar/Navbar'
+import ProductHome from '../../components/productsHome/ProductHome'
+import banner from '../../images/banner_mobile.png'
+import car from '../../images/car.svg'
+import cash from '../../images/cash.svg'
+import pigbank from '../../images/pig_bank.svg'
+import safe from '../../images/safe.png'
+import house from '../../images/house_line.png'
+import heart from '../../images/heart_24px.png'
+import points from '../../images/more_vert_24px.png'
+import Footer from '../../components/footer/Footer'
+
 
 const Home = () => {
   return (
