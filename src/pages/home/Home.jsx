@@ -1,5 +1,5 @@
 import React from 'react'
-import  './home.scss'
+//import  './home.scss'
 import Navbar from '../../components/navbar/Navbar'
 import ProductHome from '../../components/productsHome/ProductHome'
 import banner from '../../images/banner_mobile.png'
