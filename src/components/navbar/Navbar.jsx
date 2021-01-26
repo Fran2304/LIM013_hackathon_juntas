@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import  './navbar.scss';
-import loupe from '../../images/Search.svg'
 import menu from '../../images/menu_mobile.svg'
+import logo from '../../images/logo-prueba.png'
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false)
+  let menuHamburguer
+  let menuMask
+  if (showMenu) {
+   menuHamburguer = <div className = 'menuHamburguer'  >
+     The menu
+   </div>
+   menuMask = <div className='menuMask' onClick={() => setShowMenu(false)}>
+     
+   </div>
+  }
+
+
   return (
     <section className='navbar'>
-      <img src="" alt="Logo"/>
-      <img src={loupe} alt="Loupe"/>
-      <input type="text" placeholder="Buscar"/>
+      <img className='logo'src={logo} alt="Logo"/>
       <nav>
         <ul>
           <li>Home</li>
@@ -17,7 +28,10 @@ const Navbar = () => {
           <li>Comunidad</li>
         </ul>
       </nav>
-      <img src={menu} alt=""/>
+      <img className='hamburguer'src={menu} alt="hamburguer menu"
+      onClick = {() => setShowMenu(!showMenu)}/>
+      {menuMask}
+      {menuHamburguer}
     </section>
   )
 }
