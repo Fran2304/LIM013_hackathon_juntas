@@ -6,8 +6,10 @@ $granate: #c5165b;
     color: $textGray;
 }
 
-.text-size {
+.title-form {
     font-size: 20px;
+    width: 200px;
+    text-align: center;
 }
 
 hr {
@@ -36,15 +38,14 @@ hr {
 .label-input {
     width: 100%;
     display: flex;
+    flex-direction: column;
     margin: 10px;
-    align-items: center;
 
     label{
-        width: 40%;
+        margin-bottom: 5px;
     }
 
     input {
-        width: 60%;
         padding: 10px;
         border: 1px solid $textGray;
         border-radius: 3px;
