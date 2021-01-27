@@ -1,0 +1,39 @@
+$textGray: #595959;
+$white: #ffffff;
+$granate: #c5165b;
+
+.card-lg {
+    margin: 20px 20px 0 20px;
+    border: 1px solid $textGray;
+    width: 280px;
+    color: $textGray;
+    border-radius: 6px;
+    
+    .card-lg-title {
+        border-bottom: 1px solid $textGray;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .card-lg-body {
+        padding: 15px;
+
+        li {
+            font-weight: bold;
+            list-style: none;
+            margin-bottom: 5px;
+        }
+
+        li::before {
+            content: "\2022"; 
+            padding-right: 8px; 
+            color: $granate; 
+        }
+    }
+}
+
+.margin {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}

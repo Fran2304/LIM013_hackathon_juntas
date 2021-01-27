@@ -1,11 +1,13 @@
 import NavBar from '../../components/navbar/Navbar';
 import FormSimulator from '../../components/formSimulator/FormSimulator';
 import Card from '../../components/card/Card';
+import Prefooter from '../../components/prefooter/Prefooter';
 
 import './simulator.scss';
 import { useEffect, useState } from 'react';
 
 import getBancos from '../../controllers/bancos.js'; 
+import sortArray from '../../utils/sortFunction';
 
 const Simulator = () => {
 
@@ -18,7 +20,7 @@ const Simulator = () => {
         getBancos(setArrayBancos) 
      }, [])
 
-    console.log('array', arrayBancos);
+    //console.log('array', arrayBancos);
 
     const handleInput = (name, value) => {
         if(name === 'monto'){
@@ -71,8 +73,25 @@ const Simulator = () => {
         })
         
     }
-    console.log('prueba', arrayCalculos);
+    //console.log('prueba', arrayCalculos);
+
+    const sortArray = (value) => {
+        console.log('value', value);
+        if( value === 'menor'){
+            arrayCalculos.sort((a,b) => {
+                return a.total - b.total
+            })
+            
+        }else{
+            arrayCalculos.sort((a,b) => {
+                return b.total - a.total
+            })
+            
+        }  
+        setArrayCalculos([...arrayCalculos])
+    }
     
+    //console.log('fx',sortArray());
     return (
         <>
             <NavBar/>
@@ -80,8 +99,25 @@ const Simulator = () => {
                 <FormSimulator handleInput={handleInput} />
                 <button className='btn-simular' onClick={sendForm}>Simular</button>
             </section>
+            {/*  <p>7 Resultados</p> */}
             <hr className='width-100'/>
-            <Card/>
+            <section className="container-cards padding-section d-column-flex">
+                <select className='select-order' name="sort" id="sort" onChange={(e) => sortArray(e.target.value)}>
+                    <option >Ordenar por</option>
+                    <option value="menor">Menor pago</option>
+                    <option value="mayor">Mayor pago</option>
+                </select>
+                {
+                    /* arrayCalculos.sort((a,b) => {
+                        a.total < b.total
+                    }) */
+                    
+                    arrayCalculos.map(banco => {
+                        return <Card key={banco.id} infoBanco={banco}/>
+                    })
+                }
+            </section>
+            <Prefooter/>
             
         </>
     )
