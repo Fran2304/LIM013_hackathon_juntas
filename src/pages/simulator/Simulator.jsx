@@ -50,6 +50,7 @@ const Simulator = () => {
     const sendForm = (e) => {
         e.preventDefault();
         //console.log('arrayBancos', arrayBancos);
+        setArrayCalculos([]);
         arrayBancos.forEach(el => {
             //console.log('el', el);
             const interes = el.tceamin * 12;
