@@ -1,5 +1,5 @@
 import React from 'react';
-import  './searcher.scss'
+//import  './searcher.scss'
 import Navbar from '../../components/navbar/Navbar'
 const Searcher = () => {
   return(

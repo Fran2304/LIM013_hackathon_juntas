@@ -2,7 +2,7 @@
 import './App.css';
 import Route from './routes/Route'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       {/* <header className="App-header">
