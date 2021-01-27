@@ -14,7 +14,7 @@ const Routes = () => {
                 <Route exact path='/home' component={Home}/> 
                 <Route exact path='/searcher' component={Searcher}/> 
                 <Route exact path='/simulator' component={Simulator}/> 
-                <Route exact path='/data' component={DataEmpresa}/> 
+                <Route exact path='/masinfo' component={DataEmpresa}/> 
                 <Route exact path='/solicitud' component={Solicitud}/> 
             </Switch>
         </BrowserRouter>
