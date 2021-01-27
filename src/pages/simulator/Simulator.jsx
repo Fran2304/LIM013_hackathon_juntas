@@ -46,7 +46,7 @@ const Simulator = () => {
     }
 
     console.log('prueba', arrayCalculos);
-    
+
     return (
         <>
             <NavBar/>
@@ -55,7 +55,14 @@ const Simulator = () => {
                 <button className='btn-simular' onClick={sendForm}>Simular</button>
             </section>
             <hr className='width-100'/>
-            <Card/>
+            <section className="container-cards padding-section">
+                {
+                    arrayBancos.map(banco => {
+                        return <Card infoBanco={banco}/>
+                    })
+                }
+                
+            </section>
             
         </>
     )
