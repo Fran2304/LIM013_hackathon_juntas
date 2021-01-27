@@ -1,6 +1,7 @@
 import NavBar from '../../components/navbar/Navbar';
 import FormSimulator from '../../components/formSimulator/FormSimulator';
 import Card from '../../components/card/Card';
+import Prefooter from '../../components/prefooter/Prefooter';
 
 import './simulator.scss';
 import { useEffect, useState } from 'react';
@@ -18,7 +19,7 @@ const Simulator = () => {
         getBancos(setArrayBancos) 
      }, [])
 
-    console.log('array', arrayBancos);
+    //console.log('array', arrayBancos);
 
     const handleInput = (name, value) => {
         if(name === 'monto'){
@@ -50,6 +51,7 @@ const Simulator = () => {
     const sendForm = (e) => {
         e.preventDefault();
         //console.log('arrayBancos', arrayBancos);
+        setArrayCalculos([]);
         arrayBancos.forEach(el => {
             //console.log('el', el);
             const interes = el.tceamin * 12;
@@ -80,14 +82,14 @@ const Simulator = () => {
                 <button className='btn-simular' onClick={sendForm}>Simular</button>
             </section>
             <hr className='width-100'/>
-            <section className="container-cards padding-section">
+            <section className="container-cards padding-section d-column-flex">
                 {
-                    arrayBancos.map(banco => {
-                        return <Card infoBanco={banco}/>
+                    arrayCalculos.map(banco => {
+                        return <Card key={banco.id} infoBanco={banco}/>
                     })
                 }
-                
             </section>
+            <Prefooter/>
             
         </>
     )
