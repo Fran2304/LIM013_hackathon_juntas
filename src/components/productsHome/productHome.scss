@@ -1,0 +1,15 @@
+.productHome{
+width: auto;
+background: #FFFFFF;
+border: 1px solid #DEDEDE;
+box-sizing: border-box;
+/* Shadow card */
+
+box-shadow: 0px 0.1px 0.3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.2);
+border-radius: 6px;
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:40px;
+margin: 20px 0px;
+}
