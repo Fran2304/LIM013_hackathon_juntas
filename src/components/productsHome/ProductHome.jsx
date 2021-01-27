@@ -1,11 +1,11 @@
 import React from 'react';
-
+import './productHome.scss'
 const ProductHome = (props) => {
-  const {image} = props
+  const {image, text} = props
   return(
-  <section>
+  <section className='productHome'>
     <img src={image} alt=""/>
-    <p></p>
+    <p>{text}</p>
   </section>
 )}
 

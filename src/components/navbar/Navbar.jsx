@@ -8,10 +8,21 @@ const Navbar = () => {
   let menuMask
   if (showMenu) {
    menuHamburguer = <div className = 'menuHamburguer'  >
-     The menu
+     <nav>
+        <ul>
+          <li>Home</li>
+          <hr className="menuHr"></hr>
+          <li>Préstamos</li>
+          <hr></hr>
+          <li>Ahorros</li>
+          <hr></hr>
+          <li>Infórmate</li>
+          <hr></hr>
+          <li>Comunidad</li>
+        </ul>
+      </nav>
    </div>
    menuMask = <div className='menuMask' onClick={() => setShowMenu(false)}>
-     
    </div>
   }
 
@@ -19,7 +30,7 @@ const Navbar = () => {
   return (
     <section className='navbar'>
       <img className='logo'src={logo} alt="Logo"/>
-      <nav>
+      {/* <nav>
         <ul>
           <li>Home</li>
           <li>Préstamos</li>
@@ -27,7 +38,7 @@ const Navbar = () => {
           <li>Informate</li>
           <li>Comunidad</li>
         </ul>
-      </nav>
+      </nav> */}
       <img className='hamburguer'src={menu} alt="hamburguer menu"
       onClick = {() => setShowMenu(!showMenu)}/>
       {menuMask}
