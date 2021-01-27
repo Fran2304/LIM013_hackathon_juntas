@@ -7,11 +7,12 @@ const FormSimulator = ( { handleInput } ) => {
       <hr/>
       <div className='d-row-flex'>
         <div className='input-radio'>
-            <input type="radio" id="soles" name="soles" checked />
+       {/*  type="radio" name="currentemployment" value="fulltime" */}
+            <input type="radio" id="soles" name="selectmoney" />
             <label htmlFor="soles">Soles</label>
         </div>
         <div className='input-radio'>
-            <input type="radio" id="dolares" name="dolares" />
+            <input type="radio" id="dolares" name="selectmoney" />
             <label htmlFor="dolares">Dólares</label>
         </div>
       </div>
