@@ -8,11 +8,11 @@ const FormSimulator = ( { handleInput } ) => {
       <div className='d-row-flex'>
         <div className='input-radio'>
             <input type="radio" id="soles" name="soles" checked />
-            <label for="soles">Soles</label>
+            <label htmlFor="soles">Soles</label>
         </div>
         <div className='input-radio'>
             <input type="radio" id="dolares" name="dolares" />
-            <label for="dolares">Dólares</label>
+            <label htmlFor="dolares">Dólares</label>
         </div>
       </div>
       <div className='label-input'>
