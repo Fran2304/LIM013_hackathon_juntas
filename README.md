@@ -2,7 +2,7 @@
 
 Squad: 
 
-![](img-readme/logo-abouth-blank.png)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/logo-abouth-blank.png?alt=media&token=2ec36dd8-d554-4ba6-a61d-acc4ea34c82f)
 
 ## Índice
 
@@ -15,7 +15,7 @@ Squad:
 
 Juntas es una plataforma web que ayuda a las mujeres emprendedoras a evaluar y agilizar un préstamo crediticio, así mismo lanza una propuesta de acompañarlas a nivel informativo e incorporándolas a una comunidad, esto debido a que se ha detectado durante la investigación una necesita de adquirir conocimiento de forma adecuada sobre financiar su empresa.
 
-![](img-readme/logosuray.png)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/logosuray.png?alt=media&token=c0d9e30c-9d59-45bd-9745-023b60daf53b)
 
 ### Objetivo del proyecto
 
@@ -25,7 +25,7 @@ Crear una plataforma web para mujeres emprendedoras para facilitar el proceso de
 
 Se realizó un scope canvas para definir los objetivos, alcance y necesidades del proyecto y dar inicio a la etapa de investigación.
 
-![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/user-person.jpg?alt=media&token=60c01109-66d2-4e98-b914-f10a9d9ff6e1)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/scope-canvas.jpg?alt=media&token=2e12d270-7761-4f87-9e2b-f7c5565ca5f5)
 
 ### Benchmark:
 
@@ -55,7 +55,7 @@ Realizamos 3 entrevistas a mujeres emprendedoras para identificar sus necesidade
 
 Se definió el perfil de usuario para el reclutamiento de las entrevistas y este personaje fue validado y modificado con la información obtenida, dándole vida a nuestra user persona.
 
-![](img-readme/user-person.jpg)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/user-person.jpg?alt=media&token=60c01109-66d2-4e98-b914-f10a9d9ff6e1)
 
 [Link de Miro](https://miro.com/welcomeonboard/0DRac0v5na4fgZi5I5zI4ddQUiOhOLE3hkrz6o0XrmOFFOG8ndeRQvxUeJSuQv99)
 
@@ -66,7 +66,7 @@ Se definió el perfil de usuario para el reclutamiento de las entrevistas y este
 
 Recabada y analizada toda la información de la investigación, nos pusimos manos a la obra para idear la solución. Se diseñó una plataforma web de un flujo de comparación de los bancos, así como una comunidad que les permita a las mujeres informarse sobre cómo hacer crecer su emprendimiento. Previo a la maquetación se realizó un prototipo de baja y alta fidelidad.
 
-![](img-readme/proto.jpg)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/proto.jpg?alt=media&token=75838f77-6d80-4279-8bb0-6c546dad209a)
 
 ### Validando nuestra solución:
 
