@@ -6,6 +6,7 @@ $textLightGray: #b0b0b0;
 $textBlack: #2f3035;
 
 .banner-home {
+  width: 360px;
   height: 563px;
   background-image: url("/images/banner_mobile.png");
   background-repeat: no-repeat;
@@ -45,7 +46,6 @@ $textBlack: #2f3035;
     justify-content: center;
     padding: 12px 38px;
     margin: 0px 0px 0px 26px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -72,6 +72,7 @@ hr {
 }
 
 .products-body {
+  width: 360px;
   display: flex;
   flex-direction: column;
 
@@ -83,7 +84,17 @@ hr {
   }
 }
 
+.information-growth-title {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  background: $grayBackground;
+}
+
 .information-growth {
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +118,6 @@ hr {
     display: flex;
     justify-content: center;
     padding: 12px 38px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -256,7 +266,8 @@ hr {
       }
     }
   }
-  button {
+
+  .button-home {
     width: 174px;
     height: 52px;
     background-color: $granate;
@@ -267,10 +278,43 @@ hr {
     display: flex;
     justify-content: center;
     padding: 12px 38px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     margin: 20px 0px 30px 0px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .products-body{
+    width: 100%;
+  }
+  .products-body section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .information-growth-title {
+    width: 100%;
+  }
+  .information-growth {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .allBlog {
+      margin: auto;
+    }
+  }
+  .banner-home {
+    width: 100%;
+    background-color: #FFC728;
+
+    button {
+      width: 150px;
+      margin: auto;
+    }
   }
 }

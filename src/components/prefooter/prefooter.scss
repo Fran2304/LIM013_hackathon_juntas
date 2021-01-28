@@ -4,8 +4,15 @@ $white: #ffffff;
 $granate: #c5165b;
 
 .prefooter {
+    width: 360px;
     margin-top: 10px;
     background-color: $grayLight;
     color: $textGray;
     padding: 30px 30px 10px;
+}
+
+@media (min-width:768px) {
+    .prefooter {
+        width: 100%;
+    }
 }

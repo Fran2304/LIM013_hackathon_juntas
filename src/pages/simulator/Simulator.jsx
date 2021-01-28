@@ -6,11 +6,14 @@ import FormSimulator from '../../components/formSimulator/FormSimulator';
 import Card from '../../components/card/Card';
 import Prefooter from '../../components/prefooter/Prefooter';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import Footer from '../../components/footer/Footer';
 
 import './simulator.scss';
 import { useEffect, useState } from 'react';
 
 import getBancos from '../../controllers/bancos.js'; 
+
+import step01 from '../../images/barra1mobile.svg';
 
 const Simulator = () => {
 
@@ -83,12 +86,20 @@ const Simulator = () => {
             </section>
             {/*  <p>7 Resultados</p> */}
             <hr className='width-100'/>
-            <section className="container-cards padding-section d-column-flex">
+            <div className='d-column-flex align'>
                 <select className='select-order' name="sort" id="sort" onChange={(e) => sortArray(e.target.value)}>
-                    <option >Ordenar por</option>
-                    <option value="menor">Menor pago</option>
-                    <option value="mayor">Mayor pago</option>
+                        <option >Ordenar por</option>
+                        <option value="menor">Menor pago</option>
+                        <option value="mayor">Mayor pago</option>
                 </select>
+                <div className='img-steps'>
+                    <img src={step01} alt=""/>
+                </div>
+                <span className='span-text'>* Es importante que para este monto y cuotas el salario mínimo sea de 1000 soles aproximadamente.</span>
+            </div>
+            
+            <section className="container-cards padding-section d-column-flex">
+                
                 {
                     /* arrayCalculos.sort((a,b) => {
                         a.total < b.total
@@ -101,6 +112,7 @@ const Simulator = () => {
                 }
             </section>
             <Prefooter/>
+            <Footer/>
             
         </>
     )

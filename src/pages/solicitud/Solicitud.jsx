@@ -8,6 +8,8 @@ import { getClient, postSolicitud } from '../../controllers/cliente.js';
 import getMoreInfo from "../../controllers/moreInfo.js";  
 import { useState, useEffect } from 'react';
 
+import step02 from '../../images/barra2mobile.svg';
+
 const Solicitud = () => {
 
     const [inputDni, setDni] = useState();
@@ -53,9 +55,11 @@ const Solicitud = () => {
     const sendForm = () => {
         if(inputDni){
             postSolicitud(inputDni, inputRuc, inputRubro, inputBanco, inputCuenta  )
+            window.location.href = '/confirmation';
         }else{
             console.log('Just moment!');
         }
+        window.location.href = '/confirmation';
     }
 
     return(
@@ -64,6 +68,9 @@ const Solicitud = () => {
             <Breadcrumb page={'solicitud'}/>
             
             <section className='d-column-flex'>
+                <div className='img-steps'>
+                    <img src={step02} alt=""/>
+                </div>
                 <form action="" className='form-solicitud d-column-flex font-color'>
                     <p className='title-form'>Solicitud de Préstamo</p>
                     <hr/>

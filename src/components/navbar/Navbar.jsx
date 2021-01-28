@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import  './navbar.scss';
 import menu from '../../images/menu_mobile.svg'
-import logo from '../../images/logo-prueba.png'
+import logo from '../../images/logo.png'
 import googleLogin from '../../controllers/auth.js'
 import {Link} from 'react-router-dom'
 const Navbar = () => {
@@ -53,11 +53,11 @@ const Navbar = () => {
           <li>
           <Link className='linkWithout' to = '/'>Comunidad</Link>
           </li>
+
+          <button className='btn-rounded' onClick={login}>INGRESAR</button>
           
         </ul>
       </nav>
-
-      <button onClick={login}>Ingresar</button>
    </div>
    menuMask = <div className='menuMask' onClick={() => setShowMenu(false)}>
    </div>

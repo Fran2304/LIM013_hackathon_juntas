@@ -14,7 +14,7 @@ const Answer = () => {
         Pichincha analizarán tu caso y te contactará en un plazo máximo de 72
         horas.
       </p>
-      <button>IR AL HOME</button>
+      <button onClick={() => window.location.href='/'}>IR AL HOME</button>
     </section>
   );
 };

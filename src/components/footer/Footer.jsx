@@ -4,7 +4,7 @@ import twitter from '../../images/twitter.svg'
 import facebook from '../../images/facebook.svg'
 import instagram from '../../images/instagram.svg'
 import linkedin from '../../images/linkedin.svg'
-import logoPrueba from '../../images/logoPrueba.svg'
+import logo from '../../images/logo.png'
 import flecha from '../../images/flecha.svg'
 const Footer = () => {
   return (
@@ -21,44 +21,42 @@ const Footer = () => {
       </div>
       </section>
       
-
       <section className='marco'>
         <section className='iconos' >
-      <img className='logo' src={logoPrueba} alt="Logo"/>
-      <section className='iconRedesSociales'>
-        <img src={twitter} alt="Twitter"/>
-        <img src={facebook} alt="Facebook"/>
-        <img src={instagram} alt="instagram"/>
-        <img src={linkedin} alt="Linkedin"/>
+        <img className='logo' src={logo} alt="Logo"/>
+        <section className='iconRedesSociales'>
+          <img src={twitter} alt="Twitter"/>
+          <img src={facebook} alt="Facebook"/>
+          <img src={instagram} alt="instagram"/>
+          <img src={linkedin} alt="Linkedin"/>
+          </section>
         </section>
-      </section>
-      <section className="">
-        <h3>About</h3>
-        <ul>
-          <li>Quiénes somos</li>
-          <li>Preguntas frecuentes</li>
-          <li>Términos y condiciones</li>
-        </ul>
-      </section>
+        <section className="infoPlus">
+          <h3>Nosotros</h3>
+          <ul>
+            <li>Quiénes somos</li>
+            <li>Preguntas frecuentes</li>
+            <li>Términos y condiciones</li>
+          </ul>
+        </section>
 
-      <section className="infoPlus">
-        <h3>Column Heading</h3>
-        <ul>
-          <li>Compara</li>
-          <li>Infórmate</li>
-          <li>Asesoría</li>
-        </ul>
-      </section>
+        <section className="infoPlus">
+          <h3>Te ayudamos</h3>
+          <ul>
+            <li>Compara</li>
+            <li>Infórmate</li>
+            <li>Asesoría</li>
+          </ul>
+        </section>
 
-      <section className="infoPlus">
-        <h3>Column Heading</h3>
-        <ul>
-          <li>Blog</li>
-          <li>Podcast</li>
-          <li>Foro</li>
-        </ul>
-      </section>
-
+        <section className="infoPlus">
+          <h3>Infórmate</h3>
+          <ul>
+            <li>Blog</li>
+            <li>Podcast</li>
+            <li>Foro</li>
+          </ul>
+        </section>
 
       </section>
       

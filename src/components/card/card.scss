@@ -11,6 +11,7 @@ $blue: #2D9CDB;
   align-items: center;
   margin-bottom: 10px;
   color: $textGray;
+  margin-top: 10px;
   
   .recomended {
     display:flex;
@@ -69,3 +70,9 @@ height: 112px;
 .optionMore{
     color:$blue;
   }
+
+@media (min-width:768px) {
+  .card {
+    width: 300px;
+  }
+}

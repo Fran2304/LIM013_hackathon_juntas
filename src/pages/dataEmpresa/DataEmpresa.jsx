@@ -14,7 +14,7 @@ const DataEmpresa = () => {
         getMoreInfo(setObjectInfo)
     }, []);
 
-    console.log('object info', objectInfo);
+    //console.log('object info', objectInfo);
     return (
         <>
             <NavBar/>
