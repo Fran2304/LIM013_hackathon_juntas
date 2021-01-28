@@ -17,6 +17,15 @@ import emprender from "../../images/emprender.png";
 import comunidad from "../../images/comunidad.png";
 import iconSend from '../../images/iconAnchor.svg'
 import iconAnchor from '../../images/send.svg'
+
+const handleClic = (e)=>{
+  e.preventDefault();
+  window.location = '/simulator'
+  window.location = '/simulator'
+}
+
+
+
 const Home = () => {
   return (
     <section>
@@ -25,7 +34,7 @@ const Home = () => {
         {/* <img src={banner} alt="" /> */}
         <h2>Busca tu mejor opción bancaria</h2>
         <h3>Simulador de préstamos</h3>
-        <button>Comparar</button>
+        <button onClick={handleClic}>Comparar</button>
       </section>
       <section className="products-body">
         <h4>Comparaciones finacieras</h4>
@@ -125,7 +134,7 @@ const Home = () => {
               <p>Podrás compartir tus experiencas ,así como acceder a las hitorias de otra mujeres como tú</p>
             </section>
           </section>
-          <button>Foro</button>
+          <button>Unirse</button>
         </section>
        
       </section>

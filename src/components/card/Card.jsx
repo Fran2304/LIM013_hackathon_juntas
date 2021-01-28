@@ -4,7 +4,7 @@ import './card.scss';
 import { db } from "../../controllers/firebase.js";
 
 const Card = ({infoBanco, monto, ncuota}) => {
-    console.log(monto, ncuota);
+    console.log('card',monto, ncuota, infoBanco.cuota, infoBanco.total );
     function handleSend(item){
         console.log('item', item);
         db.collection("loan").doc("unique").set({
