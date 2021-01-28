@@ -1,0 +1,57 @@
+$textGray: #595959;
+$white: #ffffff;
+$granate: #c5165b;
+
+.answer {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin: 30px 0px;
+  }
+
+  .yourRequest {
+    font-size: 30px;
+    line-height: 36px;
+    color: #484848;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .thanks {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .mensajeMail {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  button {
+    margin-top:20px;
+    background: $granate;
+    height: 52px;
+    width: 207px;
+    left: 56px;
+    top: 486px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    color: $white;
+    font-size:18px;
+    border:none;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+  }
+
+  
+
+}

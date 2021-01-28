@@ -18,7 +18,7 @@ const Simulator = () => {
     const [ inputCuotas , setCuotas ] = useState();
     const [ arrayBancos, setArrayBancos] = useState([]);
     const [ arrayCalculos, setArrayCalculos ] = useState([]);
-
+    
      useEffect(() => {
         getBancos(setArrayBancos) 
      }, [])
@@ -101,7 +101,9 @@ const Simulator = () => {
                     }) */
                     
                     arrayCalculos.map(banco => {
-                        return <Card key={banco.id} infoBanco={banco}/>
+                        return <Card key={banco.id} infoBanco={banco}> 
+                        
+                        </Card>
                     })
                 }
             </section>

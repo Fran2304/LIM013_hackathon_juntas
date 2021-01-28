@@ -5,6 +5,7 @@ import Searcher from '../pages/searcher/Searcher'
 import Simulator from '../pages/simulator/Simulator'
 import DataEmpresa from '../pages/dataEmpresa/DataEmpresa'
 import Solicitud from '../pages/solicitud/Solicitud'
+import Confirmation from '../pages/confirmation/Confirmation';
 
 const Routes = () => {
     return(
@@ -15,7 +16,8 @@ const Routes = () => {
                 <Route exact path='/searcher' component={Searcher}/> 
                 <Route exact path='/simulator' component={Simulator}/> 
                 <Route exact path='/masinfo' component={DataEmpresa}/> 
-                <Route exact path='/solicitud' component={Solicitud}/> 
+                <Route exact path='/solicitud' component={Solicitud}/>
+                <Route exact path='/confirmation' component={Confirmation}/>  
             </Switch>
         </BrowserRouter>
     )

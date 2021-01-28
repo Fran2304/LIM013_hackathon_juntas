@@ -1,47 +1,71 @@
 $textGray: #595959;
-$aquaman: #D7FFE7;
-
+$aquaman: #d7ffe7;
+$white: #ffffff;
+$blue: #2D9CDB;
 .card {
-    width: 300px;
-    height: 345px;
-    border: 1px solid $textGray;
-    border-radius: 6px;
+  width: 100%;
+  height: 345px;
+  border: 1px solid $textGray;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $textGray;
+  .recomended {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 100%;
+    background: #f7cd09;
+    border-radius: 6px 6px 0px 0px;
+    color:$white;
+    text-align: center;
+  }
+
+  .card-body{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 5px 0 5px;
     margin-bottom: 10px;
-    color: $textGray;
+    justify-content: space-around; 
+  }
 
-    .img-card {
-        width: 200px;
-        height: 80px;
+
+  .img-card {
+    width: 200px;
+    height: 80px;
+  }
+
+  .info {
+    margin-right: 10px;
+
+    span {
+      font-weight: bold;
     }
 
-    .info {
-        margin-right: 10px;
-
-        span {
-            font-weight: bold;
-        }
-
-        .padding-10 {
-            padding: 10px 0 0;
-        }
-        
+    .padding-10 {
+      padding: 10px 0 0;
     }
+  }
 
-    .info-tea {
-        background-color: $aquaman;
-        border-radius: 6px;
-        height: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
+  .info-tea {
+    background-color: $aquaman;
+    border-radius: 6px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+height: 112px;
+  }
 }
-.font-size-20{
-    font-size: 20px;
-    font-weight: bold;
+.font-size-20 {
+  font-size: 20px;
+  font-weight: bold;
 }
+
+.optionMore{
+    color:$blue;
+  }
