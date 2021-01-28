@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Proyecto Juntas : Saruy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Scuad: 
 
-## Available Scripts
+![](img-readme/logo-abouth-blank.png)
 
-In the project directory, you can run:
+## Índice
 
-### `npm start`
+* [1. Iniciando la experiencia](#1-iniciando-la-experiencia)
+* [2. Detectando las necesidades](#2-detectando-las-necesidades)
+* [3. Construyendo soluciones](#3-construyendo-soluciones)
+***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 1. Iniciando la experiencia
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Juntas es una plataforma web que ayuda a las mujeres emprendedoras a evaluar y agilizar un préstamo crediticio, así mismo lanza una propuesta de acompañarlas a nivel informativo e incorporándolas a una comunidad, esto debido a que se ha detectado durante la investigación una necesita de adquirir conocimiento de forma adecuada sobre financiar su empresa.
 
-### `npm test`
+![](img-readme/logosuray.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Objetivo del proyecto
 
-### `npm run build`
+Crear una plataforma web para mujeres emprendedoras para facilitar el proceso de elección crediticia de formal ágil y amigable
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Detectando las necesidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Se realizó un scope canvas para definir los objetivos, alcance y necesidades del proyecto y dar inicio a la etapa de investigación.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](img-readme/scope-canvas.jpg)
 
-### `npm run eject`
+### Benchmark:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Se evaluaron a 9 páginas web de comparaciones de créditos y bancos con el fin de analizar el tipo de contenido,la arquitectura y las funcionalidades.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](img-readme/benchmark.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Conociendo a las usuarias:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Realizamos 3 entrevistas a mujeres emprendedoras para identificar sus necesidades, su experiencia, pain points y goals en préstamos financieros.
 
-## Learn More
+#### Insight:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Acceden a los créditos de los bancos que les otorga les préstamo rápido y no consideran los intereses a largo plazo.
+* Cuando emprenden informarse de los aspectos financieros no es su prioridad, lo aprenden cuando hay conflictos con los bancos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Hallazgos:
 
-### Code Splitting
+* Las usuarias no tienen conocimientos sobre finanzas ni ahorro, es por ellos que suelen aprender de forma esporádica y con los errores.
+* Cuando inician un negocio no suelen hacer prestamos como empresas sino como personas naturales ya que es más accesible, debido a que necesitas madurez empresarial e ingresos para que el banco te otorgue un préstamo.
+* Suelen acceder a prestamos con los bancos con los que ya trabajan en tarjetas de créditos o ahorros, ya que esos bancos les ofrecen créditos.
+* quieren una plataforma para hacer un comparativos entre bancos, necesitan saber si califican para el préstamo, que sean 100% efectivo, ya que puede que hagan la solicitud por la web, pero que el banco la niegue. También desean agilizar el tiempo pudiendo insertar y subir documentación para el préstamo.
+* Las usuarias desean ver no solo la comparación entre bancos, adicional a ellos todos los cobras que te hacen, las exoneraciones y las penalidades.
+* Las usuarias desean asesorías personalizadas, ya sea de una plataforma, amigos, expertos y de los mismos bancos, pero que sean transparentes,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Conoce a Rosa:
 
-### Analyzing the Bundle Size
+Se definió el perfil de usuario para el reclutamiento de las entrevistas y este personaje fue validado y modificado con la información obtenida, dándole vida a nuestra user persona.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](img-readme/user-person.jpg)
 
-### Making a Progressive Web App
+[Link de Miro](https://miro.com/welcomeonboard/0DRac0v5na4fgZi5I5zI4ddQUiOhOLE3hkrz6o0XrmOFFOG8ndeRQvxUeJSuQv99)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Link de drive](https://drive.google.com/drive/folders/1mGfMTBI9x8orYoQ-YhP-ccS7q_OGrChD?usp=sharing)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 3. Construyendo soluciones:
 
-### Deployment
+Recabada y analizada toda la información de la investigación, nos pusimos manos a la obra para idear la solución. Se diseñó una plataforma web de un flujo de comparación de los bancos, así como una comunidad que les permita a las mujeres informarse sobre cómo hacer crecer su emprendimiento. Previo a la maquetación se realizó un prototipo de baja y alta fidelidad.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![](img-readme/proto.jpg)
 
-### `npm run build` fails to minify
+### Validando nuestra solución:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se realizó un test de usabilidad con 3 mujeres emprendedoras del prototipo de alta fidelidad. Lo que se concluyó:
+
+* El flujo es intuitivo y fácil de realizar.
+* Solo se realizaron pequeños cambios a nivel visual.
+* A largo plazo sería importante incorporar una sección de calificación, para verificar si las usuarias pueden acceder al crédito.
+
+[Link de Figma](https://www.figma.com/file/3VCq1P4jmImk0WrV7EOjEF/Juntas?node-id=1%3A2)
+
+[Link de Figma play](https://www.figma.com/proto/3VCq1P4jmImk0WrV7EOjEF/Juntas?node-id=106%3A82&viewport=128%2C279%2C0.05112101510167122&scaling=min-zoom)
+
+### Tecnologías Utilizadas:
+
+* 
