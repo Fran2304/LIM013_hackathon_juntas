@@ -30,6 +30,21 @@
     margin: 10px 20px 0;
 }
 
+.align {
+    width: 360px;
+    margin: auto;
+}
+
+.span-text {
+    margin-top: 10px;
+    color: #595959;
+    text-align: center;
+}
+
+.img-steps {
+    margin: 10px 30px 0;
+}
+
 @media (min-width:768px) {
     .container-cards {
         display: flex;
@@ -40,8 +55,6 @@
     .card {
         margin: 10px;
     }
-    .select-order {
-        float: right;
-    }
+
 }
 
