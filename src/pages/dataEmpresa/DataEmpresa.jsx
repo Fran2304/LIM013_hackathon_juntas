@@ -18,7 +18,7 @@ const DataEmpresa = () => {
     return (
         <>
             <NavBar/>
-            <Breadcrumb />
+            <Breadcrumb page={'masinfo'}/>
             <div className="container d-column-flex">
                 <CardLarge moreInfo={objectInfo}/>
             </div>
