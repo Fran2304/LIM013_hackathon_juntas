@@ -1,0 +1,36 @@
+$textGray: #595959;
+$white: #ffffff;
+$granate: #c5165b;
+
+.dropdown-menu {
+    padding: 10px;
+    color: $textGray;
+    margin-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-out;
+    width: 100%;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.options.none {
+    display: none;
+}
+
+.options.block {
+    display: block;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "\2022"; 
+    padding-right: 8px; 
+    color: $granate; 
+}

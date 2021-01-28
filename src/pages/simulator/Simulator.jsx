@@ -1,13 +1,15 @@
+import React from 'react';
+
 import NavBar from '../../components/navbar/Navbar';
 import FormSimulator from '../../components/formSimulator/FormSimulator';
 import Card from '../../components/card/Card';
 import Prefooter from '../../components/prefooter/Prefooter';
+import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 
 import './simulator.scss';
 import { useEffect, useState } from 'react';
 
 import getBancos from '../../controllers/bancos.js'; 
-import sortArray from '../../utils/sortFunction';
 
 const Simulator = () => {
 
@@ -30,24 +32,6 @@ const Simulator = () => {
         }
         //console.log(inputMonto, inputCuotas);
     }
-
-    // const sendForm = (e) => {
-    //     e.preventDefault();
-    //     //console.log('arrayBancos', arrayBancos);
-    //     arrayBancos.map(el => {
-    //         //console.log('el', el);
-    //         const interes = el.tceamin * 12;
-    //         const total = parseInt(inputMonto) + interes;
-    //         return setArrayCalculos({
-    //             interes: interes.toFixed(2),
-    //             total: total.toFixed(2),
-    //             cuota: (total/parseInt(inputCuotas)).toFixed(2),
-                
-    //         });  
-    //     })
-        
-    // }
-
 
     const sendForm = (e) => {
         e.preventDefault();
@@ -95,6 +79,9 @@ const Simulator = () => {
     return (
         <>
             <NavBar/>
+            
+            <Breadcrumb />
+
             <section className="padding-section d-column-flex">
                 <FormSimulator handleInput={handleInput} />
                 <button className='btn-simular' onClick={sendForm}>Simular</button>

@@ -1,12 +1,6 @@
 import './card.scss';
 
-const redirectionPage = (name) => {
-    if(name === 'masinfo'){
-        window.location.href = "/masinfo";
-    }else{
-        window.location.href = '/solicitud'
-    }  
-}
+import { Link } from 'react-router-dom';
 
 const Card = ({infoBanco}) => {
     return(
@@ -33,8 +27,9 @@ const Card = ({infoBanco}) => {
                 </div> 
             </div>
             <div>
-                <a name='masinfo' onClick={(e) => redirectionPage(e.target.name)}>Más información</a>
-                <button name='loquiero' onClick={(e) => redirectionPage(e.target.name)} className='btn-simular'>Lo quiero</button>
+                <Link to='masinfo'>Más información</Link>
+                <Link to='loquiero' className='btn-simular'>Lo quiero</Link>
+              
             </div>
         </div>
     )
