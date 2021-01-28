@@ -18,7 +18,7 @@ const Solicitud = () => {
     const [dataClient, setDataClient] = useState({});
 
     const [objectInfo, setObjectInfo] = useState({});
-
+    console.log(objectInfo)
     useEffect(() => {
         getMoreInfo(setObjectInfo)
     }, []);

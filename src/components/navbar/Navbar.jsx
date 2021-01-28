@@ -2,11 +2,34 @@ import React, {useState} from 'react';
 import  './navbar.scss';
 import menu from '../../images/menu_mobile.svg'
 import logo from '../../images/logo-prueba.png'
+import googleLogin from '../../controllers/auth.js'
 import {Link} from 'react-router-dom'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   let menuHamburguer
   let menuMask
+  function login(e) {
+    e.preventDefault();
+    googleLogin().then((result) => {
+      /** @type {firebase.auth.OAuthCredential} */
+      const credential = result.credential;
+  
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      const token = credential.accessToken;
+      // The signed-in user info.
+      const user = result.user;
+      // ...
+    }).catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      const email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      const credential = error.credential;
+      // ...
+    });
+  }
   if (showMenu) {
    menuHamburguer = <div className = 'menuHamburguer'  >
      <nav>
@@ -33,6 +56,8 @@ const Navbar = () => {
           
         </ul>
       </nav>
+
+      <button onClick={login}>Ingresar</button>
    </div>
    menuMask = <div className='menuMask' onClick={() => setShowMenu(false)}>
    </div>

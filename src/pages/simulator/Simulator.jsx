@@ -40,8 +40,8 @@ const Simulator = () => {
         setArrayCalculos([]);
         arrayBancos.forEach(el => {
             //console.log('el', el);
-            const interes = el.tceamin * 12;
-            const totalnteres = parseInt(inputMonto) + (el.tceamin * 12);
+            const interes = el.tceamin * parseInt(inputMonto);
+            const totalnteres = interes + parseInt(inputMonto);
             const calc = {
                 ...el,
                 interes: interes.toFixed(2),
@@ -54,7 +54,7 @@ const Simulator = () => {
         })
         
     }
-    //console.log('prueba', arrayCalculos);
+    console.log('prueba', arrayCalculos);
 
     const sortArray = (value) => {
         console.log('value', value);
@@ -96,7 +96,7 @@ const Simulator = () => {
                     
                     arrayCalculos.map(banco => {
                         
-                        return <Card key={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas}/>
+                        return <Card key={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas} />
                     })
                 }
             </section>
