@@ -24,12 +24,12 @@ $granate: #c5165b;
     display: block;
 }
 
-li {
+.li-style {
     list-style: none;
     margin-bottom: 10px;
 }
 
-li::before {
+.li-style::before {
     content: "\2022"; 
     padding-right: 8px; 
     color: $granate; 

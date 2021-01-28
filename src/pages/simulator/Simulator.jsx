@@ -101,7 +101,7 @@ const Simulator = () => {
                     }) */
                     
                     arrayCalculos.map(banco => {
-                        return <Card key={banco.id} infoBanco={banco}/>
+                        return <Card key={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas}/>
                     })
                 }
             </section>

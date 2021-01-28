@@ -3,11 +3,12 @@ import React from 'react';
 import './card.scss';
 import { db } from "../../controllers/firebase.js";
 
-const Card = ({infoBanco}) => {
+const Card = ({infoBanco, monto, ncuota}) => {
+    console.log(monto, ncuota);
     function handleSend(item){
         console.log('item', item);
         db.collection("loan").doc("unique").set({
-            ...item,
+            ...item,monto,ncuota
         })
         .then(function() {
             console.log("Document successfully written!");

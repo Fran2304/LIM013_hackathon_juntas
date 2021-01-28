@@ -18,13 +18,13 @@ $granate: #c5165b;
     .card-lg-body {
         padding: 15px;
 
-        li {
+        .li-style {
             font-weight: bold;
             list-style: none;
             margin-bottom: 5px;
         }
 
-        li::before {
+        .li-style::before {
             content: "\2022"; 
             padding-right: 8px; 
             color: $granate; 

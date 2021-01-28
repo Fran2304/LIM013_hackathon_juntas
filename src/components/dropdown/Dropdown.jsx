@@ -10,17 +10,15 @@ const Dropdown = ({objectInfo}) => {
             <span>Ver Resumen del Préstamo <i className= { click ? "fas fa-sort-up" : "fas fa-sort-down"}></i></span>
 
             <ul className={ click ? 'options block' : 'options none'}>
-                <li><b>Entidad</b> Banco Pichincha</li>
-                <li><b>Producto:</b> Banco Pichincha</li>
-                <li><b>Tipo de Préstamo:</b> Banco Pichincha</li>
-                <li><b>Monto de Préstamo:</b> Banco Pichincha</li>
-                <li><b>N° de cuotas:</b> Banco Pichincha</li>
-                <li><b>Cuota:</b> Banco Pichincha</li>
-                <li><b>TEA:</b> Banco Pichincha</li>
-                <li><b>TCEA: </b>Banco Pichincha</li>
-                <li><b>TCEA(Min):</b> Banco Pichincha</li>
-                <li><b>TCEA(Max):</b> Banco Pichincha</li>
-                <li><b>Pago Total:</b> Banco Pichincha</li>
+                <li className='li-style'><b>Entidad</b> {objectInfo.nombre}</li>
+                <li className='li-style'><b>Producto:</b>Préstamo Libre</li>
+                <li className='li-style'><b>Tipo de Préstamo:</b>Libre Disponibilidad</li>
+                <li className='li-style'><b>Monto de Préstamo:</b>{objectInfo.monto}</li>
+                <li className='li-style'><b>N° de cuotas:</b>{objectInfo.ncuota}</li>
+                <li className='li-style'><b>Cuota:</b> {objectInfo.cuota}</li>
+                <li className='li-style'><b>TCEA(Min):</b> {objectInfo.tceamin}</li>
+                <li className='li-style'><b>TCEA(Max):</b> {objectInfo.tceamax}</li>
+                <li className='li-style'><b>Pago Total:</b> {objectInfo.total}</li>
             </ul>
         </div>
     )
