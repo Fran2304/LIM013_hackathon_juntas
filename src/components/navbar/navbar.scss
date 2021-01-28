@@ -23,15 +23,6 @@ $yellowBackground: #F7CD09;
   }
 }
 
-
-// nav{
-//   display: none;
-// }
-
-// ul{
-//   display: none;
-// }
-
 .menuHamburguer{
   position:fixed;
   background-color: $yellowBackground;
@@ -49,8 +40,6 @@ $yellowBackground: #F7CD09;
     list-style:none;
   }
 
-  
-
   li{
     margin:20px 0px 20px 0px;
   }
@@ -59,8 +48,6 @@ $yellowBackground: #F7CD09;
     color: inherit;
     text-decoration: inherit;
   }
-
-
   
   }
 
@@ -73,8 +60,6 @@ $yellowBackground: #F7CD09;
     color: $white;
     margin: auto;
   }
-
-
 
 .menuMask{
   position:fixed;

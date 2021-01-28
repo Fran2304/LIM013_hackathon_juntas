@@ -61,11 +61,11 @@ const Solicitud = () => {
     return(
         <>
             <Navbar/>
-            <Breadcrumb />
+            <Breadcrumb page={'solicitud'}/>
             
             <section className='d-column-flex'>
                 <form action="" className='form-solicitud d-column-flex font-color'>
-                    <p className='title-form'>Solicitud de Préstamos</p>
+                    <p className='title-form'>Solicitud de Préstamo</p>
                     <hr/>
                     <Dropdown objectInfo={objectInfo}/>
                     <div className='label-input bold'>

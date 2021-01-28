@@ -20,8 +20,13 @@ hr {
     margin: auto;
 }
 
+.p-input {
+    margin: 10px 0px 5px;
+    font-weight: bold;
+}
+
 .input-radio {
-    padding: 30px 10px;
+    padding: 10px 10px 0;
 }
 
 .btn-simular {
@@ -32,6 +37,26 @@ hr {
     outline: none;
     border: none;
     border-radius: 3px;
+    color: $white;
+}
+
+.border.margin-top-10 {
+    border: 1px solid $granate;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.btn-input {
+    width: 100px;
+    padding: 5px;
+    background-color: $white;
+    outline: none;
+    border: none;
+    color: $granate;
+}
+
+.btn-input.selected {
+    background-color: $granate;
     color: $white;
 }
 

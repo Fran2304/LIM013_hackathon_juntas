@@ -49,11 +49,7 @@ const Simulator = () => {
                 cuota: (totalnteres/parseInt(inputCuotas)).toFixed(2),
             }
             console.log(inputMonto);
-            // setArrayCalculos([
-            //     ...arrayCalculos,
-            //     calc
-            // ]); 
-            
+
             setArrayCalculos(arrayCalculos => [...arrayCalculos, calc]);
         })
         
@@ -71,17 +67,15 @@ const Simulator = () => {
             arrayCalculos.sort((a,b) => {
                 return b.total - a.total
             })
-            
         }  
         setArrayCalculos([...arrayCalculos])
     }
     
-    //console.log('fx',sortArray());
     return (
         <>
             <NavBar/>
             
-            <Breadcrumb />
+            <Breadcrumb page={'simulador'}/>
 
             <section className="padding-section d-column-flex">
                 <FormSimulator handleInput={handleInput} />
@@ -101,9 +95,8 @@ const Simulator = () => {
                     }) */
                     
                     arrayCalculos.map(banco => {
-                        return <Card key={banco.id} infoBanco={banco}> 
                         
-                        </Card>
+                        return <Card key={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas}/>
                     })
                 }
             </section>

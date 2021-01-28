@@ -3,11 +3,12 @@ import React from 'react';
 import './card.scss';
 import { db } from "../../controllers/firebase.js";
 
-const Card = ({infoBanco}) => {
+const Card = ({infoBanco, monto, ncuota}) => {
+    console.log(monto, ncuota);
     function handleSend(item){
         console.log('item', item);
         db.collection("loan").doc("unique").set({
-            ...item,
+            ...item,monto,ncuota
         })
         .then(function() {
             console.log("Document successfully written!");
@@ -18,20 +19,19 @@ const Card = ({infoBanco}) => {
         });
       }
     return(
+
         <div className='card'>
             <div className='recomended'>
                 Recomendado
             </div>
-            <div className='card-body'>
-                
-            
             <img className='img-card' src={infoBanco.urlimagen} alt=""/>
-            <div className="card-body d-row-flex">
-                <div className='info'>
+            <div className="card-body d-column-flex">
                 <div className="info-tea padding-10 d-column-flex">
                     <p>Pago total:</p>
                     <p className='font-size-20'>S/.{infoBanco.total}</p>
                 </div> 
+                <div className='info'>
+                    
                     <div className='padding-10'>
                         <label>Cuota:</label><span>S/.{infoBanco.cuota}</span>
                     </div>
@@ -44,11 +44,11 @@ const Card = ({infoBanco}) => {
                 </div>
                
             </div>
-            <div>
+            <div className='d-row-flex'>
                 {/* <a name='masinfo' onClick={(e) => redirectionPage(e.target.name)}>Más información</a> */}
                 {/* <button name='loquiero' onClick={(e) => redirectionPage(e.target.name)} className='btn-simular'>Lo quiero</button> */}
                 <div className= 'optionMore' onClick = {(e) => {e.preventDefault(); handleSend(infoBanco) }}>Más información </div>
-            </div>
+                <button name='solicitud' onClick={(e) => window.location.href = "/solicitud"} className='btn-simular'>Lo quiero</button> 
             </div>
         </div>
     )
