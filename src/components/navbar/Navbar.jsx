@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import  './navbar.scss';
 import menu from '../../images/menu_mobile.svg'
 import logo from '../../images/logo-prueba.png'
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   let menuHamburguer
@@ -10,15 +11,26 @@ const Navbar = () => {
    menuHamburguer = <div className = 'menuHamburguer'  >
      <nav>
         <ul>
-          <li>Home</li>
+          <li>
+             <Link className='linkWithout' to='/'>Home</Link>
+          </li>
           <hr className="menuHr"></hr>
-          <li>Préstamos</li>
-          <hr></hr>
-          <li>Ahorros</li>
-          <hr></hr>
-          <li>Infórmate</li>
-          <hr></hr>
-          <li>Comunidad</li>
+          <li>
+            <Link className='linkWithout' to='/simulator'>Prestamos</Link>
+          </li>
+          <hr className="menuHr"></hr>
+          <li>
+          <Link className='linkWithout' to = '/'>Ahorros</Link>
+          </li>
+          <hr className="menuHr"></hr>
+          <li>
+          <Link className='linkWithout' to = '/'>Infórmate</Link>
+          </li>
+          <hr className="menuHr"></hr>
+          <li>
+          <Link className='linkWithout' to = '/'>Comunidad</Link>
+          </li>
+          
         </ul>
       </nav>
    </div>
