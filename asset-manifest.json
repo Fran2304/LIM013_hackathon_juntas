@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/LIM013_hackathon_juntas/static/css/main.c83ad0c8.chunk.css",
+    "main.js": "/LIM013_hackathon_juntas/static/js/main.1ff31e65.chunk.js",
+    "main.js.map": "/LIM013_hackathon_juntas/static/js/main.1ff31e65.chunk.js.map",
+    "runtime-main.js": "/LIM013_hackathon_juntas/static/js/runtime-main.7986b2c1.js",
+    "runtime-main.js.map": "/LIM013_hackathon_juntas/static/js/runtime-main.7986b2c1.js.map",
+    "static/js/2.d9346ec2.chunk.js": "/LIM013_hackathon_juntas/static/js/2.d9346ec2.chunk.js",
+    "static/js/2.d9346ec2.chunk.js.map": "/LIM013_hackathon_juntas/static/js/2.d9346ec2.chunk.js.map",
+    "static/js/3.22d78025.chunk.js": "/LIM013_hackathon_juntas/static/js/3.22d78025.chunk.js",
+    "static/js/3.22d78025.chunk.js.map": "/LIM013_hackathon_juntas/static/js/3.22d78025.chunk.js.map",
+    "index.html": "/LIM013_hackathon_juntas/index.html",
+    "static/css/main.c83ad0c8.chunk.css.map": "/LIM013_hackathon_juntas/static/css/main.c83ad0c8.chunk.css.map",
+    "static/js/2.d9346ec2.chunk.js.LICENSE.txt": "/LIM013_hackathon_juntas/static/js/2.d9346ec2.chunk.js.LICENSE.txt",
+    "static/media/home.scss": "/LIM013_hackathon_juntas/static/media/banner_mobile.e2c88f30.png",
+    "static/media/barra1mobile.22848056.svg": "/LIM013_hackathon_juntas/static/media/barra1mobile.22848056.svg",
+    "static/media/barra2mobile.8f0a123b.svg": "/LIM013_hackathon_juntas/static/media/barra2mobile.8f0a123b.svg",
+    "static/media/barra3mobile.1b91a66a.svg": "/LIM013_hackathon_juntas/static/media/barra3mobile.1b91a66a.svg",
+    "static/media/car.807c7183.svg": "/LIM013_hackathon_juntas/static/media/car.807c7183.svg",
+    "static/media/cash.0f6244d7.svg": "/LIM013_hackathon_juntas/static/media/cash.0f6244d7.svg",
+    "static/media/comunidad.88da211b.png": "/LIM013_hackathon_juntas/static/media/comunidad.88da211b.png",
+    "static/media/emprender.5d4ee787.png": "/LIM013_hackathon_juntas/static/media/emprender.5d4ee787.png",
+    "static/media/facebook.30a61f4a.svg": "/LIM013_hackathon_juntas/static/media/facebook.30a61f4a.svg",
+    "static/media/finanzas.dc6b3abd.png": "/LIM013_hackathon_juntas/static/media/finanzas.dc6b3abd.png",
+    "static/media/flecha.123f51cd.svg": "/LIM013_hackathon_juntas/static/media/flecha.123f51cd.svg",
+    "static/media/iconAnchor.ff0b5e0f.svg": "/LIM013_hackathon_juntas/static/media/iconAnchor.ff0b5e0f.svg",
+    "static/media/instagram.7882ee0c.svg": "/LIM013_hackathon_juntas/static/media/instagram.7882ee0c.svg",
+    "static/media/invertir.712070f9.png": "/LIM013_hackathon_juntas/static/media/invertir.712070f9.png",
+    "static/media/linkedin.b3b0dab5.svg": "/LIM013_hackathon_juntas/static/media/linkedin.b3b0dab5.svg",
+    "static/media/logo.3d8324ed.png": "/LIM013_hackathon_juntas/static/media/logo.3d8324ed.png",
+    "static/media/menu_mobile.e19740b1.svg": "/LIM013_hackathon_juntas/static/media/menu_mobile.e19740b1.svg",
+    "static/media/pig_bank.985aae26.svg": "/LIM013_hackathon_juntas/static/media/pig_bank.985aae26.svg",
+    "static/media/send.1cf26987.svg": "/LIM013_hackathon_juntas/static/media/send.1cf26987.svg",
+    "static/media/sendVector.c401a8b5.svg": "/LIM013_hackathon_juntas/static/media/sendVector.c401a8b5.svg",
+    "static/media/twitter.76265684.svg": "/LIM013_hackathon_juntas/static/media/twitter.76265684.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7986b2c1.js",
+    "static/js/2.d9346ec2.chunk.js",
+    "static/css/main.c83ad0c8.chunk.css",
+    "static/js/main.1ff31e65.chunk.js"
+  ]
+}
