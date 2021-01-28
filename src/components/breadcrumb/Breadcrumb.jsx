@@ -2,7 +2,6 @@ import './breadcrumb.scss';
 import { Link } from 'react-router-dom';
 
 const Breadcrumb = ({page}) => {
-    console.log('page', page);
 
     if(page === 'simulador'){
         return (

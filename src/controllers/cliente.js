@@ -5,7 +5,6 @@ export const getClient = ( id, callback) => {
     .doc(id)
     .get()
     .then((doc) => {
-        console.log('controller',doc.data());
         callback(doc.data());
     })
     .catch(error => console.log('Getting error!', error))

@@ -24,7 +24,7 @@ const Solicitud = () => {
     }, []);
 
     const handleInput = (name,value) => {
-        console.log('value', value);
+ 
         switch(name) {
             case 'dni': setDni(value);
             break;
