@@ -3,14 +3,6 @@ import React from 'react';
 import './card.scss';
 import { db } from "../../controllers/firebase.js";
 
-// const redirectionPage = (name) => {
-//     if(name === 'masinfo'){
-//         window.location.href = "/masinfo";
-//     }else{
-//         window.location.href = '/solicitud'
-//     }  
-// }
-
 const Card = ({infoBanco}) => {
     function handleSend(item){
         console.log('item', item);

@@ -1,9 +1,14 @@
 import './formsolicitud.scss';
 
 const FormSolicitud = () => {
+   
     return (
         <form action="" className='form-solicitud d-column-flex font-color'>
             <p className='title-form'>Simulador de Préstamos</p>
+            <div className='label-input bold'>
+                <label>DNI</label>
+                <input type="text" placeholder='Número de DNI'/>
+            </div>
             <div className='label-input bold'>
                 <label>Nombres</label>
                 <input type="text" placeholder='Ingresar nombres'/>
@@ -11,10 +16,6 @@ const FormSolicitud = () => {
             <div className='label-input bold'>
                 <label>Apellidos</label>
                 <input type="text" placeholder='Ingresar apellidos'/>
-            </div>
-            <div className='label-input bold'>
-                <label>DNI</label>
-                <input type="text" placeholder='Número de DNI'/>
             </div>
             <div className='label-input bold'>
                 <label>RUC</label>
