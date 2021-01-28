@@ -48,3 +48,9 @@ $granate: #c5165b;
     position: fixed;
     right: 80px;
 }
+
+@media (min-width:768px) {
+    .card-lg {
+        width: 500px;
+    }
+}

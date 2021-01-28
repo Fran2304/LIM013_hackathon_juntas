@@ -84,6 +84,15 @@ hr {
   }
 }
 
+.information-growth-title {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  background: $grayBackground;
+}
+
 .information-growth {
   width: 360px;
   display: flex;
@@ -257,7 +266,8 @@ hr {
       }
     }
   }
-  button {
+
+  .button-home {
     width: 174px;
     height: 52px;
     background-color: $granate;
@@ -277,7 +287,34 @@ hr {
 }
 
 @media (min-width: 768px) {
-  .products-body {
+  .products-body{
     width: 100%;
+  }
+  .products-body section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .information-growth-title {
+    width: 100%;
+  }
+  .information-growth {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .allBlog {
+      margin: auto;
+    }
+  }
+  .banner-home {
+    width: 100%;
+    background-color: #FFC728;
+
+    button {
+      width: 150px;
+      margin: auto;
+    }
   }
 }

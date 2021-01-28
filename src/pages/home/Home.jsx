@@ -25,22 +25,25 @@ const Home = () => {
         {/* <img src={banner} alt="" /> */}
         <h2>Busca tu mejor opción bancaria</h2>
         <h3>Simulador de préstamos</h3>
-        <button>Comparar</button>
+        <button onClick={() => window.location.href='/simulator'}>Comparar</button>
       </section>
       <section className="products-body">
         <h4>Comparaciones finacieras</h4>
         <hr />
-        <section className='containerProduct'>
+        <section>
           <ProductHome image={car} text={"Vehicular"}></ProductHome>
-          <ProductHome image={cash} text={"Prestamo"}></ProductHome>
+          <ProductHome image={cash} text={"Préstamo"}></ProductHome>
           <ProductHome image={pigbank} text={"Ahorro"}></ProductHome>
           <ProductHome image={house} text={"Hipoteca"}></ProductHome>
           <ProductHome image={safe} text={"Seguro"}></ProductHome>
         </section>
       </section>
+      <div className='information-growth-title'>
+          <h4>Infórmate y crece</h4>
+          <hr />
+      </div>
       <section className="information-growth">
-        <h4>Infórmate y crece</h4>
-        <hr />
+        
         <section className="allBlog">
           <section className="blog">
             <img className="imgBlog" src={emprender} alt="oso" />
@@ -98,8 +101,10 @@ const Home = () => {
             </section>
           </section>
         </section>
-        <button>Ver todo</button>
       </section>
+      <div className='information-growth-title'>
+        <button className='btn-simular'>Ver todo</button>
+      </div>
       <section className="comunity">
         <h4>Únete a nuestra comunidad</h4>
         <hr />
@@ -125,7 +130,7 @@ const Home = () => {
               <p>Podrás compartir tus experiencas ,así como acceder a las hitorias de otra mujeres como tú</p>
             </section>
           </section>
-          <button>Foro</button>
+          <button className='button-home'>Foro</button>
         </section>
        
       </section>

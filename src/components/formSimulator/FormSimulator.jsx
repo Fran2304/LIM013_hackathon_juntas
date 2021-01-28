@@ -2,7 +2,7 @@ import './formsimulator.scss';
 
 const FormSimulator = ( { handleInput } ) => {
   return (
-    <form action="" className='d-column-flex font-color'>
+    <form action="" className='form-simular d-column-flex font-color'>
       <p className='title-form'>Simulador de Préstamos</p>
       <hr/>
       <div className='border margin-top-10'>
