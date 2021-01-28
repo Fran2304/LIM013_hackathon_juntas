@@ -1,6 +1,6 @@
 # Proyecto Juntas : Saruy
 
-Scuad: 
+Squad: 
 
 ![](img-readme/logo-abouth-blank.png)
 
@@ -25,13 +25,13 @@ Crear una plataforma web para mujeres emprendedoras para facilitar el proceso de
 
 Se realizó un scope canvas para definir los objetivos, alcance y necesidades del proyecto y dar inicio a la etapa de investigación.
 
-![](img-readme/scope-canvas.jpg)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/user-person.jpg?alt=media&token=60c01109-66d2-4e98-b914-f10a9d9ff6e1)
 
 ### Benchmark:
 
 Se evaluaron a 9 páginas web de comparaciones de créditos y bancos con el fin de analizar el tipo de contenido,la arquitectura y las funcionalidades.
 
-![](img-readme/benchmark.jpg)
+![](https://firebasestorage.googleapis.com/v0/b/proyecto-juntas-51dc9.appspot.com/o/benchmark.jpg?alt=media&token=b1e8a418-8843-4a16-8520-783a71b5b66f)
 
 ### Conociendo a las usuarias:
 
@@ -82,4 +82,6 @@ Se realizó un test de usabilidad con 3 mujeres emprendedoras del prototipo de a
 
 ### Tecnologías Utilizadas:
 
-* 
+* Librería: React.js
+* Preprocesador de estilos: Sass
+* Servicios de Firebase: Authentification, Firestore, Storage
