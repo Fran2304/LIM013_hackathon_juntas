@@ -6,6 +6,7 @@ import FormSimulator from '../../components/formSimulator/FormSimulator';
 import Card from '../../components/card/Card';
 import Prefooter from '../../components/prefooter/Prefooter';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import Footer from '../../components/footer/Footer';
 
 import './simulator.scss';
 import { useEffect, useState } from 'react';
@@ -96,11 +97,12 @@ const Simulator = () => {
                     
                     arrayCalculos.map(banco => {
                         
-                        return <Card key={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas}/>
+                        return <Card key={banco.id} id={banco.id} infoBanco={banco} monto={inputMonto} ncuota={inputCuotas}/>
                     })
                 }
             </section>
             <Prefooter/>
+            <Footer/>
             
         </>
     )

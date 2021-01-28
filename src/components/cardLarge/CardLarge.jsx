@@ -1,8 +1,6 @@
 import "./cardlarge.scss";
 
 const CardLarge = ({ moreInfo }) => {
-  console.log(moreInfo.requisitosdocumentarios);
-  console.log(moreInfo.nombre)
   
   return (
     <>
@@ -19,6 +17,7 @@ const CardLarge = ({ moreInfo }) => {
           <label className="margin">Libre Disponibilidad</label>
           <li className='li-style'>Salario mínimo</li>
           <label className="margin">10000</label>
+          <button className='btn-simular btn-float' onClick={() => window.location.href='/solicitud'}>SOLICITAR PRÉSTAMO</button>
         </div>
       </div>
       <div className="card-lg">

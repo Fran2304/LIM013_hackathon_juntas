@@ -30,7 +30,7 @@ const Home = () => {
       <section className="products-body">
         <h4>Comparaciones finacieras</h4>
         <hr />
-        <section>
+        <section className='containerProduct'>
           <ProductHome image={car} text={"Vehicular"}></ProductHome>
           <ProductHome image={cash} text={"Prestamo"}></ProductHome>
           <ProductHome image={pigbank} text={"Ahorro"}></ProductHome>

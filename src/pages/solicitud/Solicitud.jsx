@@ -52,10 +52,12 @@ const Solicitud = () => {
    
     const sendForm = () => {
         if(inputDni){
-            postSolicitud(inputDni, inputRuc, inputRubro, inputBanco, inputCuenta  )
+            //postSolicitud(inputDni, inputRuc, inputRubro, inputBanco, inputCuenta  )
+            window.location.href = '/confirmation';
         }else{
             console.log('Just moment!');
         }
+        window.location.href = '/confirmation';
     }
 
     return(

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import  './navbar.scss';
 import menu from '../../images/menu_mobile.svg'
-import logo from '../../images/logo-prueba.png'
+import logo from '../../images/logo.png'
 import {Link} from 'react-router-dom'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -30,6 +30,8 @@ const Navbar = () => {
           <li>
           <Link className='linkWithout' to = '/'>Comunidad</Link>
           </li>
+
+          <button className='btn-rounded'>INGRESAR</button>
           
         </ul>
       </nav>
