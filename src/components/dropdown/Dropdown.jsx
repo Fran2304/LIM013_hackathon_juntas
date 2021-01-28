@@ -5,7 +5,6 @@ const Dropdown = ({objectInfo}) => {
     const [ click, setClick ] = useState(false);
     const handleClick = () => setClick(!click);
 
-    console.log('objecthijo', objectInfo);
     return(
         <div  onClick={handleClick} className='d-column-flex dropdown-menu'>
             <span>Ver Resumen del Préstamo <i className= { click ? "fas fa-sort-up" : "fas fa-sort-down"}></i></span>

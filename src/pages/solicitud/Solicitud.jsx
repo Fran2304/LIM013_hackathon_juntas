@@ -58,12 +58,6 @@ const Solicitud = () => {
         }
     }
 
-    console.log('1', inputDni);
-    console.log('2', inputRuc);
-    console.log('3', inputRubro);
-    console.log('4', inputBanco);
-    console.log('4', inputCuenta);
-
     return(
         <>
             <Navbar/>
